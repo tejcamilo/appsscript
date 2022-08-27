@@ -16,7 +16,7 @@ function countIf(){
       destination1.setValue('');
       wait(10);
       sheet1.getRange('A2')
-        .setFormula('=ARRAYFORMULA(IF(ISBLANK(D2:D),,COUNTIF(IMPORTRANGE("____", "Report!O2:O"),M2:M)+COUNTIF(IMPORTRANGE("____","Report!O2:O"),M2:M)+COUNTIF(IMPORTRANGE("175COLcf5Pp1DDYVigk2UYzpk0xaLxZfAIuCAJdzJfYE","Report!O2:O"),M2:M)))');
+        .setFormula('=ARRAYFORMULA(IF(ISBLANK(D2:D),,COUNTIF(IMPORTRANGE("____", "Report!O2:O"),M2:M)+COUNTIF(IMPORTRANGE("____","Report!O2:O"),M2:M)+COUNTIF(IMPORTRANGE("____","Report!O2:O"),M2:M)))');
       var sheet2 = getSpreadSheet.getSheetByName('Enviar');
       var destination2 = sheet2.getRange('A2');
       destination2.setFormula("");
